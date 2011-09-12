@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if !MONO
+
+using System;
 using System.Collections.ObjectModel;
 using System.IdentityModel.Policy;
 using System.Linq;
@@ -321,3 +323,5 @@ namespace Hexa.Core.WebServices
         }
 	}
 }
+
+#endif

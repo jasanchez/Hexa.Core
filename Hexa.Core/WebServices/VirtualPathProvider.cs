@@ -1,4 +1,6 @@
-﻿using System;
+﻿#if !MONO
+
+using System;
 using System.Collections;
 using System.Globalization;
 using System.IO;
@@ -189,3 +191,5 @@ namespace Hexa.Core.WebServices
 	}
 
 }
+
+#endif
